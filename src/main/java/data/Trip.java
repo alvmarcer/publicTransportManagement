@@ -1,7 +1,8 @@
+package data;
+
 import java.util.Date;
 
 public class Trip {
-
     Taxi taxi;
     Date date;
 

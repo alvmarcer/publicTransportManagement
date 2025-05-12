@@ -1,9 +1,13 @@
-public class Admin extends Person implements Login{
+package data;
+
+import interfaces.Login;
+
+public class Admin extends Person implements Login {
 
     String password;
 
-    public Admin(String dni, String name, String surname, String contact, String password){
-        super(dni,name,surname,contact);
+    public Admin(String name, String surname, String contact, String password){
+        super(name,surname,contact);
         this.password = password;
     }
 

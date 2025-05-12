@@ -1,12 +1,11 @@
-public abstract class Person {
+package data;
 
-    String dni;
+public abstract class Person {
     String name;
     String surname;
     String contact;
 
-    public Person(String dni, String name, String surname, String contact){
-        this.dni = dni;
+    public Person(String name, String surname, String contact){
         this.name = name;
         this.surname = surname;
         this.contact = contact;
@@ -14,9 +13,6 @@ public abstract class Person {
 
     public String getName(){
         return name;
-    }
-    public String getDni(){
-        return dni;
     }
     public String getSurname(){
         return surname;
@@ -28,9 +24,6 @@ public abstract class Person {
     public void setName(String name){
         this.name = name;
     }
-    public void setDni(String dni){
-        this.dni = dni;
-    }
     public void setSurname(String surname){
         this.surname = surname;
     }
@@ -40,6 +33,6 @@ public abstract class Person {
 
     @Override
     public String toString(){
-        return dni + " " + name + " " + surname + " " + contact;
+        return name + " " + surname + " " + contact;
     }
 }

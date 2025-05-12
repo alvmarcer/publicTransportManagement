@@ -1,6 +1,8 @@
+package data;
+
 public class Driver extends Person{
     public Driver(String dni, String name, String surname, String contact){
-        super(dni,name,surname,contact);
+        super(name,surname,contact);
     }
 
     @Override

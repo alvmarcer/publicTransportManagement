@@ -1,3 +1,5 @@
+package interfaces;
+
 public interface Login {
 
     public String getPassword();

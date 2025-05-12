@@ -1,16 +1,18 @@
+package data;
+
 public abstract class Vehicle {
     int id;
     int ability;
     double cost;
     String model;
-    String marca;
+    String brand;
 
-    public Vehicle(int id, int ability, double cost, String model, String marca){
+    public Vehicle(int id, int ability, double cost, String model, String brand){
         this.id = id;
         this.ability = ability;
         this.cost = cost;
         this.model = model;
-        this.marca = marca;
+        this.brand = brand;
     }
     public int getId(){
         return id;
@@ -24,11 +26,11 @@ public abstract class Vehicle {
     public String getmodel(){
         return model;
     }
-    public String getmarca() { return marca;}
+    public String getmarca() { return brand;}
 
     public void setId(int id) {this.id = id;}
     public void setAbility(int ability) {this.ability = ability;}
     public void setCost(double cost) {this.cost = cost;}
-    public void setMarca(String marca) {this.marca = marca;}
+    public void setMarca(String marca) {this.brand = brand;}
     public void setModel(String model) {this.model = model;}
 }

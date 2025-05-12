@@ -1,4 +1,8 @@
-public class Taxi extends Vehicle implements wheeledVehicles {
+package data;
+
+import interfaces.WheeledVehicles;
+
+public class Taxi extends Vehicle implements WheeledVehicles {
     int wheels;
     Driver driver;
 
