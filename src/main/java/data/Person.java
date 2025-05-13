@@ -1,9 +1,22 @@
 package data;
 
+/**
+ * Abstract class representing a person with basic personal information.
+ * Used as a base for more specific user types like Admin.
+ */
+
 public abstract class Person {
     String name;
     String surname;
     String contact;
+
+    /**
+     * Creates a new Person with name, surname, and contact info.
+     *
+     * @param name Person's first name
+     * @param surname Person's last name
+     * @param contact Contact information
+     */
 
     public Person(String name, String surname, String contact){
         this.name = name;

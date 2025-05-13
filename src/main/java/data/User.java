@@ -5,10 +5,24 @@ import interfaces.Login;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents a regular user of the system.
+ * Inherits personal information from Person and supports login functionality.
+ * Users can have a list of trips.
+ */
 public class User extends Person implements Login {
 
     List<Trip> trips;
     String password;
+
+    /**
+     * Creates a new User with the given personal data and password.
+     *
+     * @param name User's first name
+     * @param surname User's last name
+     * @param contact User's contact information
+     * @param password User's login password
+     */
 
     public User(String name, String surname, String contact, String password){
         super(name,surname,contact);
