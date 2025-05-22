@@ -48,4 +48,9 @@ public class Bus extends Vehicle implements PublicTransport, WheeledVehicles {
     public void setStop(Stop stop) {
         this.stop = stop;
     }
+
+    @Override
+    public String toString() {
+        return "Bus: " + id + " " + ability + " " + cost + " " + model + " " + marca + " " + wheels;
+    }
 }

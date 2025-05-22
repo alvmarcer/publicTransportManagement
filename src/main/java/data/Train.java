@@ -34,4 +34,9 @@ public class Train extends Vehicle implements PublicTransport {
 
     @Override
     public void setStop(Stop stop) { this.stop = stop; }
+
+    @Override
+    public String toString() {
+        return "Bus: " + id + " " + ability + " " + cost + " " + model + " " + marca + " " + wagons;
+    }
 }

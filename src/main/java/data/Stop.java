@@ -10,24 +10,36 @@ import java.util.*;
  */
 public class Stop {
     int id;
-    List<PublicTransport> vehicles;
+    String name;
 
     /**
      * Constructs a Stop with the specified ID.
      *
      * @param id the unique identifier of the stop
      */
-    public Stop(int id) {
+    public Stop(int id, String name) {
         this.id = id;
-        vehicles = new ArrayList<>();
+        this.name = name;
     }
 
-    /**
-     * Adds a public transport vehicle to this stop.
-     *
-     * @param vehicle the public transport vehicle to add
-     */
-    public void addVehicle(PublicTransport vehicle) {
-        vehicles.add(vehicle);
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + name;
     }
 }

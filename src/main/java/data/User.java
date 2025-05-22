@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class User extends Person implements Login {
 
+    double money;
     List<Trip> trips;
     String password;
 
@@ -26,8 +27,25 @@ public class User extends Person implements Login {
 
     public User(String name, String surname, String contact, String password){
         super(name,surname,contact);
+        money = 0;
         trips = new ArrayList<>();
         this.password = password;
+    }
+
+    public void addMoney(double money) {
+        this.money += money;
+    }
+
+    public void removeMoney(double money) {
+        this.money -=money;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
     }
 
     public void addTrip(Trip trip) {

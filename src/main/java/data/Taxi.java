@@ -36,4 +36,7 @@ public class Taxi extends Vehicle implements WheeledVehicles {
 
     @Override
     public void setWheels(int wheels) { this.wheels = wheels; }
+
+    @Override
+    public String toString(){return id + " " + driver;}
 }
