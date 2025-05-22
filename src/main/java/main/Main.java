@@ -239,9 +239,9 @@ public class Main {
         System.out.println("There is a " + transport);
     }
 
-    public static void saveUser(User user) { // FIX THIS; DON'T WORK
+    public static void saveUser(User user) {
         try {
-            String fileName = user.getName() + ".txt";
+            String fileName = "users/" + user.getName() + ".txt";
             File file = new File(fileName);
 
             if (file.exists()) {
