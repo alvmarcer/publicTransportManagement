@@ -3,6 +3,7 @@ package main;
 import data.Stop;
 import data.Trip;
 import data.User;
+import com.example.publictransportmanagement.AdminInterface;
 import interfaces.Login;
 import interfaces.PublicTransport;
 import interfaces.WheeledVehicles;
@@ -265,24 +266,9 @@ public class Main {
 
         switch (typeLogin(sc)) {
             case 1:
-                if(verifyPassword(sc, Examples.CreateBaseAdmin())) {
-                    boolean menu = true;
-                    do {
-                        System.out.println();
-
-                        switch (adminOptions(sc)) {
-                            case 1:
-                                createUser(sc);
-                                break;
-                            case 2:
-                                deleteUser(sc);
-                                break;
-                            case 3:
-                                System.out.println("Leaving...");
-                                menu = false;
-                                break;
-                        }
-                    } while (menu);
+                if (verifyPassword(sc, Examples.CreateBaseAdmin())) {
+                    System.out.println("Opening Administrator panel...");
+                    javafx.application.Application.launch(AdminInterface.class);
                 }
                 break;
             case 2:
