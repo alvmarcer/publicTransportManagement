@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.publictransportmanagement","l":"com.example.publictransportmanagement"},{"m":"com.example.publictransportmanagement","l":"data"},{"m":"com.example.publictransportmanagement","l":"interfaces"},{"m":"com.example.publictransportmanagement","l":"main"}];updateSearchResults();
