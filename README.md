@@ -1,10 +1,10 @@
 # publicTransportManagement
-1st year DAW development environment work by Nicolás Martínez, Álvaro Martí and Dayron Luceros, Public Transport Management
+1st year DAW development environment work by Nicolás Martínez, Álvaro Martí and Dayron Lucero, Public Transport Management
 
 ##  👥 Authors
 
 - Álvaro Martí (**[@alvmarcer](https://www.github.com/alvmarcer)**)
-- Dayron Luceros (**[@Dyron2704](https://www.github.com/Dyron2704)**)
+- Dayron Lucero (**[@Dyron2704](https://www.github.com/Dyron2704)**)
 - Nicolás Martínez (**[@NicoML4](https://www.github.com/NicoML4)**)
 
 ## 📦 Installation
